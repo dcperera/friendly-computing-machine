@@ -13,12 +13,12 @@ def test_add():
 testdata = [
     (2, 5, 10),
     (1, 2, 2),
-    (11, 9, 99,)
-    (0, 0, 0)
+    (11, 9, 99),
+    (0, 0, 0),
 ]
-@pytest.mark.parameterize("a,b,expected", testdata)
+@pytest.mark.parametrize("a,b,expected", testdata)
 def test_mult(a,b,expected):
-    assert fcm.mult(1, 2) == 2
+    assert fcm.mult(a, b) == expected
   
 
 
